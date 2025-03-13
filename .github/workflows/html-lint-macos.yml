@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Instal HTMLHint
-        run: npm install -g htmlhint
+        run: npm install --save-dev stylelint stylelint-config-standard
 
       - name: Jalankan HTMLHint
         run: htmlhint "**/*.html"
