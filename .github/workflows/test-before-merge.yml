@@ -13,9 +13,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Install Dependencies
-        run: npm install
-        
       - name: Install HTMLHint & Stylelint
         run: |
           npm install -g htmlhint stylelint
@@ -25,3 +22,4 @@ jobs:
 
       - name: Periksa CSS
         run: stylelint "**/*.css"
+
